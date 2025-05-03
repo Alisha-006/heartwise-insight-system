@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -185,7 +184,7 @@ const HealthForm = ({ onSubmit }: HealthFormProps) => {
         </div>
 
         <div className="space-y-2">
-          <Label>Fasting Blood Sugar > 120 mg/dl</Label>
+          <Label>Fasting Blood Sugar &gt; 120 mg/dl</Label>
           <RadioGroup
             value={formData.fastingBS}
             onValueChange={(value) => handleSelectChange("fastingBS", value)}

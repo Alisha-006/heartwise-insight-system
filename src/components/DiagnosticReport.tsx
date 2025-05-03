@@ -113,7 +113,7 @@ const DiagnosticReport = ({
                 <div className="space-y-2">
                   <div className="flex justify-between">
                     <span className="text-sm text-medical-neutral">
-                      Fasting Blood Sugar > 120 mg/dl:
+                      Fasting Blood Sugar &gt; 120 mg/dl:
                     </span>
                     <span className="text-sm font-medium">
                       {healthData.fastingBS === "above120" ? "Yes" : "No"}
