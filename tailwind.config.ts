@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Medical color palette
+				medical: {
+					primary: '#1E88E5',  // Medical blue
+					light: '#90CAF9',    // Light blue
+					dark: '#0D47A1',     // Dark blue
+					accent: '#E53935',   // Red accent for critical indicators
+					mild: '#FFC107',     // Yellow for mild indicators
+					moderate: '#FF9800', // Orange for moderate indicators
+					success: '#43A047',  // Green for good results
+					neutral: '#78909C',  // Neutral gray
+					bg: '#F5F7FA',       // Light background
+					text: '#37474F'      // Dark text
 				}
 			},
 			borderRadius: {
@@ -84,11 +98,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-gentle': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' }
+				},
+				'fade-in': {
+					from: { opacity: '0', transform: 'translateY(8px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
+				},
+				'slide-in': {
+					from: { transform: 'translateX(-10px)', opacity: '0' },
+					to: { transform: 'translateX(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-gentle': 'pulse-gentle 2s ease-in-out infinite',
+				'fade-in': 'fade-in 0.3s ease-out forwards',
+				'slide-in': 'slide-in 0.3s ease-out forwards'
 			}
 		}
 	},
